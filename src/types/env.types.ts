@@ -1,6 +1,8 @@
 import { z } from "zod"
 
-const env = z.object({})
+const env = z.object({
+	DATABASE_URL: z.string(),
+})
 
 env.parse(process.env)
 
