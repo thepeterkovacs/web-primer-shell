@@ -3,6 +3,7 @@
 /node_modules/
 
 # files
-.env*.local
+/.env*
 *.tsbuildinfo
+pnpm-lock.yaml
 next-env.d.ts
