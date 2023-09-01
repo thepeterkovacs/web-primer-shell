@@ -8,7 +8,7 @@ import Providers from "@/components/providers/Providers"
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
-		<html>
+		<html suppressHydrationWarning>
 			<body className={fonts.roboto.className}>
 				<Providers>{children}</Providers>
 			</body>
