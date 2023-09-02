@@ -1,7 +1,8 @@
 # folders
 /.next/
 /node_modules/
-/tests/
+/tests/export/
+/tests/out/
 
 # files
 .env*.local
