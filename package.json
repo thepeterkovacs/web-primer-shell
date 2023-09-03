@@ -20,8 +20,9 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"format": "npx prettier . --write",
+		"format": "pnpm prettier . --write",
 		"test": "playwright test",
+		"report": "pnpm playwright show-report tests\\export",
 		"db:migrate": "drizzle-kit generate:mysql",
 		"db:push": "drizzle-kit push:mysql",
 		"db:studio": "drizzle-kit studio --port 4000 --verbose"
