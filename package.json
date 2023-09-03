@@ -1,6 +1,6 @@
 {
 	"name": "web-primer-shell",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"private": true,
 	"author": "thepeterkovacs",
 	"maintainers": [
@@ -12,7 +12,7 @@
 		"url": "https://github.com/thepeterkovacs/web-primer-shell"
 	},
 	"engines": {
-		"node": "16.20.0"
+		"node": ">=16.20.0"
 	},
 	"packageManager": "pnpm@8.7.0",
 	"scripts": {
@@ -20,7 +20,9 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"format": "npx prettier . --write",
+		"format": "pnpm prettier . --write",
+		"test": "playwright test",
+		"report": "pnpm playwright show-report tests\\export",
 		"db:migrate": "drizzle-kit generate:mysql",
 		"db:push": "drizzle-kit push:mysql",
 		"db:studio": "drizzle-kit studio --port 4000 --verbose"
@@ -56,6 +58,7 @@
 		"zod": "^3.22.2"
 	},
 	"devDependencies": {
+		"@playwright/test": "^1.37.1",
 		"@trivago/prettier-plugin-sort-imports": "^4.2.0",
 		"drizzle-kit": "^0.19.13"
 	}
