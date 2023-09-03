@@ -20,8 +20,25 @@ export type ApiTestCase = {
 	}
 }
 
-export function API_TEST_HELPER(title: string, testCases: ApiTestCase[]) {
+export function API_TEST_HELPER(
+	title: string,
+	testCases: ApiTestCase[],
+	beforeEach?: Function,
+	afterEach?: Function
+) {
 	test.describe.parallel(title, () => {
+		if (beforeEach) {
+			test.beforeEach(({}) => {
+				beforeEach()
+			})
+		}
+
+		if (afterEach) {
+			test.afterEach(({}) => {
+				afterEach()
+			})
+		}
+
 		testCases.map((testCase) => {
 			const { title, request, response } = testCase
 			const { method, url, options } = request
