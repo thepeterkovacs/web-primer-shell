@@ -2,8 +2,12 @@
 	Web Primer Shell
 </h1>
 
+## Introduction
+
+A developer-friendly web application template suitable for a wide spectrum of full-stack projects, offering a blend of contemporary tools and solutions to cater to both straightforward and intricate development needs.
+
 > **Warning**
-> This application is currently in development and is not yet suitable for deployment in professional production environments.
+> This application is currently in development and is not yet suitable for deployment in production environments.
 
 ## Quick start
 
