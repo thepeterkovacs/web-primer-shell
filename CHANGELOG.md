@@ -2,6 +2,20 @@
 	Changelog
 </h1>
 
+### 0.1.2
+
+#### New features
+
+-   Tailwind and React Query dev tools
+-   tRPC caller
+-   README introduction and warning
+-   NextAuth route handler and options
+-   API test helper before and after functions
+
+#### Changes
+
+-   engine and package manager requirements
+
 ### 0.1.1
 
 #### New features
