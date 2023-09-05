@@ -1,9 +1,10 @@
 #folders
 /.next/
 /node_modules/
+/src/components/layout/
 
 #files
-/.env*
-*.tsbuildinfo
+/.env\*
+\*.tsbuildinfo
 pnpm-lock.yaml
 next-env.d.ts
