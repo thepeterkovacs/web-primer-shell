@@ -2,6 +2,9 @@
 	Web Primer Shell
 </h1>
 
+> **Warning**
+> This application is currently in development and is not yet suitable for deployment in professional production environments.
+
 ## Quick start
 
 ##### initialize with Next.js CLI tool
