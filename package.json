@@ -36,9 +36,6 @@
 		"@trpc/client": "^10.38.0",
 		"@trpc/react-query": "^10.38.0",
 		"@trpc/server": "^10.38.0",
-		"@types/node": "20.5.7",
-		"@types/react": "18.2.21",
-		"@types/react-dom": "18.2.7",
 		"autoprefixer": "10.4.15",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.0.0",
@@ -62,6 +59,9 @@
 	"devDependencies": {
 		"@playwright/test": "^1.37.1",
 		"@trivago/prettier-plugin-sort-imports": "^4.2.0",
+		"@types/node": "20.5.7",
+		"@types/react": "18.2.21",
+		"@types/react-dom": "18.2.7",
 		"drizzle-kit": "^0.19.13"
 	}
 }
