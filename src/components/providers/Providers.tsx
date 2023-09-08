@@ -13,7 +13,7 @@ export default async function Providers({ children }: PropsWithChildren): Promis
 	return (
 		<SessionProvider session={session}>
 			<QueryProvider>
-				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 					{children}
 					<DevTools />
 				</ThemeProvider>
