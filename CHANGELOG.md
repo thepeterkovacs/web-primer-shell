@@ -2,6 +2,19 @@
 	Changelog
 </h1>
 
+### 0.1.3
+
+#### New features
+
+-   NextAuth session provider
+-   security policy
+-   session and local storage hooks
+
+#### Changes
+
+-   tsconfig ES5 to ES6
+-   general code cleanup
+
 ### 0.1.2
 
 #### New features
@@ -29,5 +42,3 @@
 -   README quick start
 
 ## 0.1.0
-
-Initial application release.
