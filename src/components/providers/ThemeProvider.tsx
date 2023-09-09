@@ -5,6 +5,6 @@ import { type ThemeProviderProps } from "next-themes/dist/types"
 
 import * as React from "react"
 
-export default function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+export default function ThemeProvider({ children, ...props }: ThemeProviderProps): JSX.Element {
 	return <NextThemesProvider {...props}>{children}</NextThemesProvider>
 }

@@ -16,15 +16,3 @@ A developer-friendly web application template suitable for a wide spectrum of fu
 ```bash
 pnpm create next-app -e https://github.com/thepeterkovacs/web-primer-shell
 ```
-
-##### navigate to app directory
-
-```bash
-cd my-app
-```
-
-##### rename .env.template to .env.local
-
-```bash
-mv .env.template .env.local
-```

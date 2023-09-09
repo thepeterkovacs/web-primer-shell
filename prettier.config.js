@@ -17,7 +17,6 @@ module.exports = {
 	],
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
-	jsxSingleQuote: true,
 	plugins: ["@trivago/prettier-plugin-sort-imports"],
 	printWidth: 100,
 	semi: false,

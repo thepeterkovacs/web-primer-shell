@@ -7,7 +7,7 @@ import React, { ReactNode, useState } from "react"
 
 import { trpc } from "@/app/_trpc/client"
 
-export default function QueryProvider({ children }: { children: ReactNode }) {
+export default function QueryProvider({ children }: { children: ReactNode }): JSX.Element {
 	const [queryClient] = useState(() => new QueryClient({}))
 
 	const [trpcClient] = useState(() =>
