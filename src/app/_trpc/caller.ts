@@ -1,4 +1,4 @@
-import { appRouter } from "@/server"
+import { appRouter } from "@/server/appRouter"
 import { httpBatchLink } from "@trpc/client"
 
 export const caller = appRouter.createCaller({
