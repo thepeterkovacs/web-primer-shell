@@ -1,6 +1,10 @@
+import { NextMiddlewareWithAuth } from "next-auth/middleware"
+
 import { NextMiddleware, NextResponse } from "next/server"
 
-type Middleware = (middleware: NextMiddleware) => NextMiddleware
+export type AnyMiddleware = NextMiddleware | NextMiddlewareWithAuth
+
+export type Middleware = (middleware: AnyMiddleware) => AnyMiddleware
 
 /**
  * Chains an array of middleware functions together and returns a composed middleware.
@@ -10,7 +14,7 @@ type Middleware = (middleware: NextMiddleware) => NextMiddleware
  * @example
  * const output = chainMiddlewares([auth, i18n])
  */
-export default function chainMiddlewares(functions: Middleware[], i: number = 0): NextMiddleware {
+export default function chainMiddlewares(functions: Middleware[], i: number = 0): AnyMiddleware {
 	const current = functions[i]
 
 	if (current) {
