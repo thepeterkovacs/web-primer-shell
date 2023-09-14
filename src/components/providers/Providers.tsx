@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth"
 import { PropsWithChildren } from "react"
 
 import DevTools from "../tools/DevTools"
+import { Toaster } from "../tools/Toaster"
 import QueryProvider from "./QueryProvider"
 import SessionProvider from "./SessionProvider"
 import ThemeProvider from "./ThemeProvider"
@@ -15,6 +16,7 @@ export default async function Providers({ children }: PropsWithChildren): Promis
 			<QueryProvider>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 					{children}
+					<Toaster />
 					<DevTools />
 				</ThemeProvider>
 			</QueryProvider>

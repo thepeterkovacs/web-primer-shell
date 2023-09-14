@@ -2,6 +2,19 @@
 	Changelog
 </h1>
 
+## 0.2.0
+
+#### New features
+
+-   shadcn/ui toast notification
+-   NextAuth and i18n middlewares
+-   editorconfig
+
+#### Changes
+
+-   tRPC naming conventions
+-   removal of API test helper function
+
 ### 0.1.3
 
 #### New features
