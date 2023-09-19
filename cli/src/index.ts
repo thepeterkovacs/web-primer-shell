@@ -2,7 +2,7 @@ import { checkIfGitExists, cloneRepository } from "./commands/git.js"
 import { askIsReady, askProjectName } from "./commands/inquirer.js"
 import showTitle from "./commands/title.js"
 import { validateProjectName, validateReady } from "./commands/validate.js"
-import { openVscode } from "./commands/vscode.js"
+import { startVscode } from "./commands/vscode.js"
 
 await showTitle()
 
@@ -18,6 +18,6 @@ await checkIfGitExists()
 
 await cloneRepository(name)
 
-await openVscode(name)
+await startVscode(name)
 
 process.exit(0)

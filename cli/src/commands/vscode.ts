@@ -4,19 +4,19 @@ import { oraPromise } from "ora"
 
 import error from "../utils/error.js"
 
-export async function openVscode(name: string): Promise<void> {
+export async function startVscode(name: string): Promise<void> {
 	try {
 		await oraPromise(
 			execa("code", [name]),
 
 			{
-				text: "Opening VSCode...",
-				successText: "VSCode opened successfully",
+				text: "Starting VSCode...",
+				successText: "VSCode started successfully",
 				spinner: cliSpinners.binary,
 				color: "yellow",
 			}
 		)
 	} catch (err) {
-		error("Error while opening VSCode", err)
+		error("Error while starting VSCode", err)
 	}
 }
