@@ -1,6 +1,6 @@
 import inquirer from "inquirer"
 
-export async function askIsReady() {
+export async function askIsReady(): Promise<boolean> {
 	const answer: { ready: boolean } = await inquirer.prompt([
 		{
 			name: "ready",
@@ -12,7 +12,7 @@ export async function askIsReady() {
 	return answer.ready
 }
 
-export async function askProjectName() {
+export async function askProjectName(): Promise<string> {
 	const answer: { name: string } = await inquirer.prompt([
 		{
 			name: "name",
