@@ -1,4 +1,4 @@
-import chalk from "chalk"
+import error from "../utils/error.js"
 
 export function validateReady(ready: boolean): void {
 	if (!ready) {
@@ -8,7 +8,6 @@ export function validateReady(ready: boolean): void {
 
 export function validateProjectName(name: string): void {
 	if (!/^[^\\/:\*\?"<>\|]+$/.test(name)) {
-		console.log(chalk.bgRed('Project name does not match regex /^[^\\/:*?"<>|]+$/' + "\n"))
-		process.exit(1)
+		error('Project name does not match regex /^[^\\/:*?"<>|]+$/')
 	}
 }
