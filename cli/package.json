@@ -7,7 +7,6 @@
 		"thepeterkovacs"
 	],
 	"license": "MIT",
-	"main": "index.js",
 	"type": "module",
 	"bin": {
 		"wps": "build/index.js"
