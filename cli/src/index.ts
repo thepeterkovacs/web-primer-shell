@@ -1,4 +1,4 @@
-import { checkIfGitExists } from "./commands/git.js"
+import { checkIfGitExists, cloneRepository } from "./commands/git.js"
 import { askIsReady, askProjectName } from "./commands/inquirer.js"
 import showTitle from "./commands/title.js"
 import { validateProjectName, validateReady } from "./commands/validate.js"
@@ -14,5 +14,7 @@ const name = await askProjectName()
 validateProjectName(name)
 
 await checkIfGitExists()
+
+await cloneRepository(name)
 
 process.exit(0)
