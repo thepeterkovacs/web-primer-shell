@@ -1,11 +1,19 @@
 import inquirer from "inquirer"
 
-export async function askIsReady(): Promise<boolean> {
-	const answer: { ready: boolean } = await inquirer.prompt([
+export async function askIsReady(): Promise<"Yes" | "No"> {
+	const answer: { ready: "Yes" | "No" } = await inquirer.prompt([
 		{
 			name: "ready",
-			type: "confirm",
+			type: "list",
 			message: "Ready to clone Web Primer Shell from GitHub?",
+			choices: [
+				{
+					name: "Yes",
+				},
+				{
+					name: "No",
+				},
+			],
 		},
 	])
 

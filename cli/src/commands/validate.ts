@@ -1,7 +1,7 @@
 import error from "../utils/error.js"
 
-export function validateReady(ready: boolean): void {
-	if (!ready) {
+export function validateReady(ready: "Yes" | "No"): void {
+	if (ready === "No") {
 		process.exit(0)
 	}
 }
