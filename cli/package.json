@@ -1,16 +1,17 @@
 {
-	"name": "wps",
+	"name": "web-primer-shell",
 	"version": "0.0.1",
-	"private": true,
 	"author": "thepeterkovacs",
 	"maintainers": [
 		"thepeterkovacs"
 	],
 	"license": "MIT",
-	"type": "module",
-	"bin": {
-		"wps": "build/index.js"
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thepeterkovacs/web-primer-shell/tree/main/cli"
 	},
+	"type": "module",
+	"bin": "build/index.js",
 	"scripts": {
 		"build": "npx tsc",
 		"watch": "tsc -w",
