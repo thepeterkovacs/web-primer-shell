@@ -10,7 +10,7 @@
 	"main": "index.js",
 	"type": "module",
 	"bin": {
-		"wps": "./build/index.js"
+		"wps": "build/index.js"
 	},
 	"scripts": {
 		"build": "npx tsc",
