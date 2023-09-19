@@ -12,7 +12,7 @@ export async function checkIfGitExists(): Promise<void> {
 	}
 }
 
-export async function cloneRepository(name: string) {
+export async function cloneRepository(name: string): Promise<void> {
 	try {
 		await oraPromise(
 			execa("git", ["clone", "https://github.com/thepeterkovacs/web-primer-shell.git", name]),
