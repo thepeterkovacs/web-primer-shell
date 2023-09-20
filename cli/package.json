@@ -1,15 +1,27 @@
 {
 	"name": "web-primer-shell",
 	"version": "0.0.1",
-	"author": "thepeterkovacs",
+	"description": "Initializes a new project using the Web Primer Shell application template.",
+	"author": {
+		"name": "Peter Kovacs",
+		"email": "peterkov37@gmail.com",
+		"url": "https://primershell.com"
+	},
 	"maintainers": [
 		"thepeterkovacs"
 	],
+	"homepage": "https://github.com/thepeterkovacs/web-primer-shell/tree/main/cli",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/thepeterkovacs/web-primer-shell/tree/main/cli"
 	},
+	"keywords": [
+		"Web Primer Shell",
+		"CLI",
+		"template",
+		"TypeScript"
+	],
 	"type": "module",
 	"bin": "build/index.js",
 	"scripts": {
@@ -24,8 +36,7 @@
 		"figlet": "^1.6.0",
 		"gradient-string": "^2.0.2",
 		"inquirer": "^9.2.11",
-		"ora": "^7.0.1",
-		"shelljs": "^0.8.5"
+		"ora": "^7.0.1"
 	},
 	"devDependencies": {
 		"@types/figlet": "^1.5.6",
