@@ -1,6 +1,7 @@
 import { z } from "zod"
 
 const env = z.object({
+	BASE_URL: z.string(),
 	DATABASE_URL: z.string(),
 	NEXTAUTH_URL: z.string(),
 	NEXTAUTH_SECRET: z.string(),
