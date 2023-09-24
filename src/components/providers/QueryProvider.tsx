@@ -14,7 +14,7 @@ export default function QueryProvider({ children }: { children: ReactNode }): JS
 		trpcClient.createClient({
 			links: [
 				httpBatchLink({
-					url: "http://localhost:3000/api/trpc",
+					url: `${process.env.BASE_URL}/api/trpc`,
 				}),
 			],
 		})
