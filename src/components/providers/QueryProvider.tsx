@@ -5,7 +5,7 @@ import { httpBatchLink } from "@trpc/client"
 
 import React, { ReactNode, useState } from "react"
 
-import { trpcClient } from "@/app/_trpc/client"
+import { trpcClient } from "@/lib/trpc/client"
 
 export default function QueryProvider({ children }: { children: ReactNode }): JSX.Element {
 	const [queryClient] = useState(() => new QueryClient({}))
@@ -14,7 +14,7 @@ export default function QueryProvider({ children }: { children: ReactNode }): JS
 		trpcClient.createClient({
 			links: [
 				httpBatchLink({
-					url: "http://localhost:3000/api/trpc",
+					url: `${process.env.BASE_URL}/api/trpc`,
 				}),
 			],
 		})

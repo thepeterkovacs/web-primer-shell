@@ -11,7 +11,7 @@ import {
 	ToastViewport,
 } from "@/components/layout/Toast"
 
-export function Toaster() {
+export function Toaster(): JSX.Element {
 	const { toasts } = useToast()
 
 	return (
