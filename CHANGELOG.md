@@ -2,6 +2,19 @@
 	Changelog
 </h1>
 
+### 0.2.1
+
+#### New Features
+
+-   base URL environment variable
+-   list of features to README
+
+#### Changes
+
+-   package.json properties
+-   path of tRPC definitions
+-   Playwright config
+
 ## 0.2.0
 
 #### New features
