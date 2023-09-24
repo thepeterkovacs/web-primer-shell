@@ -10,3 +10,15 @@ import { twMerge } from "tailwind-merge"
  * //output = "text-red-500 font-bold py-2"
  */
 export const cn = (...inputs: ClassValue[]): string => twMerge(clsx(inputs))
+
+/**
+ * Fetches the HTML content from a specified URL.
+ * @param {string} url The URL from which to fetch HTML content.
+ * @returns {Promise<string>} A Promise that resolves with the fetched HTML content as a string.
+ * @example
+ * const output = await getHtmlFromUrl("https://nextjs.org")
+ */
+export const getHtmlFromUrl = async (url: string): Promise<string> => {
+	const res = await fetch(url, { cache: "no-store" })
+	return await res.text()
+}
