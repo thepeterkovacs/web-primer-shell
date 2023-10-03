@@ -7,4 +7,6 @@ export const authProcedure = t.middleware(({ next }) => {
 })
 
 export const router = t.router
+
 export const publicProcedure = t.procedure
+export const privateProcedure = t.procedure.use(authProcedure)
