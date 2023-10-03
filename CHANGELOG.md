@@ -2,6 +2,12 @@
 	Changelog
 </h1>
 
+## 0.3.0
+
+#### New Features
+
+-   CLI tool 1.0.0
+
 ### 0.2.2
 
 #### New Features
