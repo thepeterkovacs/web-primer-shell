@@ -10,3 +10,34 @@ import { twMerge } from "tailwind-merge"
  * //output = "text-red-500 font-bold py-2"
  */
 export const cn = (...inputs: ClassValue[]): string => twMerge(clsx(inputs))
+
+/**
+ * Fetches the HTML content from a specified URL.
+ * @param {string} url The URL from which to fetch HTML content.
+ * @returns {Promise<string>} A Promise that resolves with the fetched HTML content as a string.
+ * @example
+ * const output = await getHtmlFromUrl("https://nextjs.org")
+ */
+export const getHtmlFromUrl = async (url: string): Promise<string> => {
+	const res = await fetch(url, { cache: "no-store" })
+	return await res.text()
+}
+
+/**
+ * Extracts a substring from a string, given a prefix and suffix.
+ * @param {string} str The string to extract the substring from.
+ * @param {string} prefix Prefix of the substring to extract.
+ * @param {string} suffix Suffix of the substring to extract.
+ * @returns {string} The substring extracted from the string, or an empty string if the substring could not be found.
+ * @example
+ * const output = extractSubstring("Some string as str.", "Some ", " as str.")
+ * //output = "string"
+ */
+export const extractSubstring = (str: string, prefix: string, suffix: string): string => {
+	const startIndex = str.indexOf(prefix)
+	const endIndex = str.indexOf(suffix)
+
+	const subString = str.slice(startIndex + prefix.length, endIndex)
+
+	return subString
+}

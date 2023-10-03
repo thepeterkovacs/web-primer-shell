@@ -23,8 +23,8 @@ A developer-friendly web application template suitable for a wide spectrum of fu
 
 ## Quick start
 
-### initialize with Next.js CLI tool
+### initialize with web-primer-shell CLI tool
 
 ```bash
-pnpm create next-app -e https://github.com/thepeterkovacs/web-primer-shell
+pnpm dlx web-primer-shell
 ```
