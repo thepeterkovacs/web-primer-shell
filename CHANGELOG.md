@@ -2,6 +2,18 @@
 	Changelog
 </h1>
 
+### 0.2.2
+
+#### New Features
+
+-   tRPC private procedure
+-   Playwright GitHub workflow
+-   new standard utility functions
+
+#### Changes
+
+-   shadcn-ui gray theme
+
 ### 0.2.1
 
 #### New Features
