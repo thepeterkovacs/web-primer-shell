@@ -2,6 +2,17 @@
 	Changelog
 </h1>
 
+### 0.3.1
+
+#### New Features
+
+-   .tsbuildinfo generation
+-   package-lock.json file
+
+#### Changes
+
+-   Playwright GitHub workflow
+
 ## 0.3.0
 
 #### New Features
