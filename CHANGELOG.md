@@ -2,6 +2,13 @@
 	Changelog
 </h1>
 
+### 0.3.2
+
+#### New features
+
+-   CLI tool 1.0.1
+-   slide template page
+
 ### 0.3.1
 
 #### New Features
