@@ -28,7 +28,7 @@ export async function removeUnnecessaryFiles(name: string): Promise<void> {
 					`${name}\\LICENSE.md`,
 					`${name}\\SECURITY.md`,
 					`${name}\\README.md`,
-					`${name}\\cli`,
+					`${name}\\package-lock.json`,
 				],
 				{
 					shell: true,
