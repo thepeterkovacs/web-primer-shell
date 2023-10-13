@@ -2,6 +2,14 @@
 	Changelog
 </h1>
 
+### 0.3.3
+
+#### New features
+
+-   CLI tool 1.0.2
+-   T class
+-   API rate limit utilily function
+
 ### 0.3.2
 
 #### New features
