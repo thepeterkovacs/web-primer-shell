@@ -2,6 +2,14 @@
 	Changelog
 </h1>
 
+## 0.4.0
+
+#### Changes
+
+-   CLI tool to primer-shell package
+-   Playwright GitHub workflow
+-   ignore files
+
 ### 0.3.3
 
 #### New features

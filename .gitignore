@@ -1,12 +1,10 @@
-# folders
-
-/.next/
-/node_modules/
-/tests/export/
-/tests/out/
+# directories
+.next
+node_modules
+tests/export
+tests/out
 
 # files
-
-.env.local
-*.tsbuildinfo
+.env*
+!.env.template
 next-env.d.ts
