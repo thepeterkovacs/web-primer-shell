@@ -32,13 +32,14 @@ jobs:
             - name: Build project
               run: pnpm run build
 
-            - name: Install playwright browsers
+            - name: Install Playwright browsers
               run: pnpm dlx playwright install --with-deps
 
             - name: Run Playwright tests
-              run: pnpm dlx playwright test
+              run: pnpm test
 
-            - uses: actions/upload-artifact@v3
+            - name: "Upload results"
+              uses: actions/upload-artifact@v3
               if: always()
               with:
                   name: report
