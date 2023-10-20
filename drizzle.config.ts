@@ -10,7 +10,7 @@ export default {
 	out: "./src/database/out",
 	driver: "mysql2",
 	dbCredentials: {
-		connectionString: process.env.DATABASE_URL,
+		connectionString: process.env.PS_DB_URL,
 	},
 	tablesFilter: [""],
 	verbose: true,
