@@ -12,7 +12,7 @@ export type Middleware = (middleware: AnyMiddleware) => AnyMiddleware
  * @param {number} i Index of the current middleware being processed.
  * @returns {NextMiddleware} The composed middleware function.
  * @example
- * const output = chainMiddlewares([auth, i18n])
+ * const middleware = chainMiddlewares([auth, i18n])
  */
 export default function chainMiddlewares(functions: Middleware[], i: number = 0): AnyMiddleware {
 	const current = functions[i]
