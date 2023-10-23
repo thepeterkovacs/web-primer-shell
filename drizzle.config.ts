@@ -6,8 +6,8 @@ dotenv.config({
 })
 
 export default {
-	schema: "./src/database/schema/*.ts",
-	out: "./src/database/out",
+	schema: "./src/server/database/schema/*.ts",
+	out: "./src/server/database/out",
 	driver: "mysql2",
 	dbCredentials: {
 		connectionString: process.env.PS_DB_URL,
