@@ -2,6 +2,19 @@
 	Changelog
 </h1>
 
+## 0.5.0
+
+#### New features
+
+-   theme based icons
+-   CODEOWNERS file
+-   prettier-plugin-tailwindcss
+-   tRPC error handling
+
+#### Changes
+
+-   server directory reorganization
+
 ## 0.4.0
 
 #### Changes
