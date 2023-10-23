@@ -57,7 +57,7 @@ export default function Slide({ params }: Props) {
 	}, [])
 
 	return (
-		<main className="flex h-screen justify-center items-center">
+		<main className="flex h-screen items-center justify-center">
 			<h1 className="text-4xl">slide number {currentNumber}</h1>
 		</main>
 	)

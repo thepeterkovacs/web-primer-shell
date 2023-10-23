@@ -17,11 +17,12 @@ module.exports = {
 	],
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
-	plugins: ["@trivago/prettier-plugin-sort-imports"],
+	plugins: ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
 	printWidth: 100,
 	semi: false,
 	singleQuote: false,
 	tabWidth: 4,
+	tailwindFunctions: ["cn"],
 	trailingComma: "es5",
 	useTabs: true,
 }
