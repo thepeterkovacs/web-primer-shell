@@ -7,9 +7,10 @@ import { Toaster } from "../tools/Toaster"
 import QueryProvider from "./QueryProvider"
 import SessionProvider from "./SessionProvider"
 import ThemeProvider from "./ThemeProvider"
+import options from '@/lib/auth/options'
 
 export default async function Providers({ children }: PropsWithChildren): Promise<JSX.Element> {
-	const session = await getServerSession()
+	const session = await getServerSession(options)
 
 	return (
 		<SessionProvider session={session}>
