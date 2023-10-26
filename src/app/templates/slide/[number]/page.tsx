@@ -4,9 +4,11 @@ import { useEffect } from "react"
 
 import { useRouter } from "next/navigation"
 
+import T from "@/lib/classes/T"
+
 const options = {
 	numberOfSlides: 5,
-	intervalInMs: 3000,
+	intervalInMs: new T().s(3).toMs(),
 }
 
 interface Props {
@@ -15,7 +17,7 @@ interface Props {
 	}
 }
 
-export default function Slide({ params }: Props) {
+export default function SlidePage({ params }: Props) {
 	const { number } = params
 
 	const currentNumber = parseInt(number)
