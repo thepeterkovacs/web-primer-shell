@@ -60,7 +60,7 @@ export default function SlidePage({ params }: Props) {
 
 	return (
 		<main className="flex h-screen items-center justify-center">
-			<h1 className="text-4xl">slide number {currentNumber}</h1>
+			<h1 className="text-3xl">slide number: {currentNumber}</h1>
 		</main>
 	)
 }
