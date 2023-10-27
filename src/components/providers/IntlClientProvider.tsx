@@ -6,7 +6,10 @@ interface Props extends PropsWithChildren {
 	locale: string
 }
 
-export default async function IntlClientProvider({ children, locale }: Props) {
+export default async function IntlClientProvider({
+	children,
+	locale,
+}: Props): Promise<JSX.Element> {
 	const messages = (await import(`../../lib/i18n/messages/${locale}.json`)).default
 
 	return (
