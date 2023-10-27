@@ -6,7 +6,7 @@ import { defaultLocale, locales } from "@/lib/i18n/config"
 
 export default function i18n(): (request: NextRequest) => NextResponse<unknown> {
 	return createMiddleware({
-		locales,
+		locales: locales.map((locale) => locale.lang),
 		defaultLocale,
 		localePrefix: "never",
 	})
