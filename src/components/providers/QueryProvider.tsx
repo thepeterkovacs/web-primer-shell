@@ -5,7 +5,7 @@ import { httpBatchLink } from "@trpc/client"
 
 import React, { ReactNode, useState } from "react"
 
-import { trpcClient } from "@/lib/trpc/client"
+import { trpcClient } from "@/lib/utils/trpc/client"
 
 export default function QueryProvider({ children }: { children: ReactNode }): JSX.Element {
 	const [queryClient] = useState(() => new QueryClient({}))

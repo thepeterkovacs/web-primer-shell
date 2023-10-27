@@ -2,6 +2,19 @@
 	Changelog
 </h1>
 
+# 1.0.0
+
+#### New features
+
+-   full internationalization
+-   LocaleDropdown component
+-   next-intl example page
+
+#### Changes
+
+-   package updates
+-   templates to examples
+
 ## 0.5.0
 
 #### New features
